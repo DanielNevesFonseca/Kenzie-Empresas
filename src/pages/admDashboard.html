@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/logo-tab.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/text.css">
+  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/admDashboard.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  <title>Dashboard ADM</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo button-home" src="../assets/icons/logo-tab.png" alt="Logo da Kenzie Empresas.">
+    <div class="header__buttons-container">
+      <button class="button-go-to-logout button-option">Logout</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <select class="companies__select" name="companies" id="#companies">
+      <option value="">Selecionar Empresa</option>
+    </select>
+
+    <section class="main__departments">
+      <h1 class="title-1-bold">Departamentos</h1>
+      <button class="button-create-department button-default">+ Criar</button>
+      <ul class="departments__container">
+        <!-- Renderizar Cards Departamentos -->
+      </ul>
+    </section>
+
+    <section class="main__employees">
+      <h1 class="title-1-bold">Usuários Cadastrados</h1>
+      <ul class="employees__container">
+        <!-- Renderizar Usuários Cadastrados -->
+      </ul>
+    </section>
+  </main>
+
+  <dialog class="logout-modal__controller">
+    <div class="logout-modal__container">
+      <h2 class="title-2-bold">Certeza que deseja fazer Logout?</h2>
+      <div class="logout-modal__buttons">
+        <button class="button-logout button-action-2">Sair</button>
+        <button class="button-cancel button-option">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--edit-user">
+    <div class="modal__container--edit-user">
+      <h2 class="title-1-bold">Editar Usuário</h2>
+      <button class="button-cancel">X</button>
+      <form class="edit__form">
+        <input name="name" class="edit__input" type="text" placeholder="Nome">
+        <input name="email" class="edit__input" type="email" placeholder="Email">
+        <button class="edit-request button-action-1" type="submit">Salvar</button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--delete-user">
+    <div class="modal__container--delete-user">
+      <h2 class="title-1-bold">Realmente deseja remover o usuário?</h2>
+      <button class="button-cancel">X</button>
+      <button class="delete-request button-action-2" type="submit">Remover</button>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--delete-department">
+    <div class="modal__container--delete-department">
+      <h2 class="title-1-bold">Realmente deseja remover o departamento e demitir seus funcionários?</h2>
+      <button class="button-cancel">X</button>
+      <button class="delete-department-request button-action-2" type="submit">Remover</button>
+    </div>
+  </dialog>
+
+
+  <dialog class="modal__controller--edit-department">
+    <div class="modal__container--edit-department">
+      <h2 class="title-1-bold">Editar Departamento</h2>
+      <button class="button-cancel">X</button>
+      <form class="edit__form">
+        <input autocomplete="off" name="name" class="edit-department__input" type="text"
+          placeholder="Nome Departamento">
+        <textarea autocomplete="off" class="edit-department__input" name="description" id="#department-description"
+          placeholder="Descrição do departamento"></textarea>
+        <button class="edit-department-request button-action-1" type="submit">Salvar</button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--create-department">
+    <div class="modal__container--create-department">
+      <h2 class="title-1-bold">Criar Departamento</h2>
+      <button class="button-cancel">X</button>
+      <form class="edit__form">
+        <input autocomplete="off" name="name" class="create-department__input" type="text"
+          placeholder="Nome Departamento">
+        <textarea autocomplete="off" class="create-department__input" name="description" id="#department-description"
+          placeholder="Descrição do departamento"></textarea>
+        <select class="companies__select companies-select__option" name="company_id">
+          <option value="">Selecionar Empresa</option>
+        </select>
+        <button class="create-department-request button-action-1" type="submit">Criar</button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--show-department">
+    <div class="modal__container--show-department">
+      <h1 class="title-1-bold name-department-selected">Nome Departamento</h1>
+      <p class="department-description text-1-regular">Descrição do departamento</p>
+      <p class="company-name text-1-semibold">Empresa</p>
+      <button class="button-cancel">X</button>
+      <div class="select__form">
+        <select class="unemployed__select" name="unemployed" id="#unemployed">
+        </select>
+        <button class="button-hire-employee button-action-1">Contratar</button>
+      </div>
+      <ul class="employees-in-department__container">
+        <!-- Renderizar Funcionários contratados no departamemto -->
+      </ul>
+    </div>
+  </dialog>
+
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" defer src="../scripts/admDashboard.js"></script>
+</body>
+
+</html>

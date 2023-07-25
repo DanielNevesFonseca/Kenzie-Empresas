@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/assets/icons/logo-tab.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/text.css">
+  <link rel="stylesheet" href="./src/styles/buttons.css">
+  <link rel="stylesheet" href="./src/styles/form.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <title>Home - Kenzie Empresas</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="./src/assets/icons/logo-tab.png" alt="Logo da Kenzie Empresas.">
+    <div class="header__buttons-container">
+      <button class="button-login button-option">Login</button>
+      <button class="button-register button-default">Cadastro</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__background-image">
+      <img src="./src/assets/images/section-image-home-page.svg" alt="Imagem ilustrativa homem em reunião.">
+    </section>
+
+    <section class="main__companies">
+      <select class="companies__select" name="companies" id="#companies">
+        <option value="">Selecionar Setor</option>
+    </select>
+
+      <ul class="companies__container">
+        <h2 class="title-1-bold">Lista de Empresas</h2>
+        <!-- Renderizar empresas listadas -->
+      </ul>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./src/scripts/index.js" defer type="module"></script>
+</body>
+
+</html>

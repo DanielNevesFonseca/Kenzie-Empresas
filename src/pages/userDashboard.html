@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/logo-tab.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/userDashboard.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <title>Sua Dashboard</title>
+  </head>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo button-home" src="../assets/icons/logo-tab.png" alt="Logo da Kenzie Empresas.">
+    <div class="header__buttons-container">
+      <button class="button-go-to-logout button-option">Logout</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__info-user">
+      <h1 class="title-1-bold">UserName</h1>
+      <p class="text-1-regular">email@mail.com</p>
+    </section>
+
+    <section class="main__info-company"></section>
+  </main>
+
+  <dialog class="logout-modal__controller">
+    <div class="logout-modal__container">
+      <h2 class="title-2-bold">Certeza que deseja fazer Logout?</h2>
+      <div class="logout-modal__buttons">
+        <button class="button-logout button-action-2">Sair</button>
+        <button class="button-cancel button-option">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" defer src="../scripts/userDashboard.js"></script>
+</body>
+
+</html>

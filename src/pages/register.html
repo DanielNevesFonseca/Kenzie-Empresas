@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/logo-tab.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/text.css">
+  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/register.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo button-home" src="../assets/icons/logo-tab.png" alt="Logo da Kenzie Empresas.">
+    <div class="header__buttons-container">
+      <button class="button-home button-option">Home</button>
+      <button class="go-to-login button-default">Login</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__container">
+      <form class="register__form">
+        <div class="form__info-box">
+          <h1 class="title-1-bold">Cadastre-se</h1>
+        </div>
+        <input autocomplete="off" class="register__input text-1-medium" type="text" name="name" id="register-name" placeholder="Seu nome">
+        <input autocomplete="off" class="register__input text-1-medium" type="email" name="email" id="register-email" placeholder="Seu e-mail">
+        <input autocomplete="off" class="register__input text-1-medium" type="password" name="password" id="register-password" placeholder="Sua senha">
+        <button type="submit" class="button-register button-default">Cadastrar</button>
+        <button class="go-to-login button-option">Retornar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" defer src="../scripts/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.title-1-bold{
+  font-size: var(--font-size-title-1);
+  font-weight: var(--font-weight-bold);
+}
+
+.title-2-bold, .title-2-medium{
+  font-size: var(--font-size-title-2);
+}
+
+.title-2-bold{
+  font-weight: var(--font-weight-bold);
+}
+
+.title-2-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+/*================= Paragraphs =============================== */
+
+.text-1-semibold, .text-1-medium, .text-1-regular{
+  font-size: var(--font-size-text-1);
+}
+
+.text-1-semibold{
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-1-medium{
+  font-weight: var(--font-weight-medium);
+}
+
+.text-1-regular{
+  font-weight: var(--font-weight-regular);
+}
+
+.text-2-medium{
+  font-size: var(--font-size-text-2);
+  font-weight: var(--font-weight-medium);
+}

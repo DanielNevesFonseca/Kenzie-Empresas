@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  /* COLOR STYLES */
+  --brand-color-1: #0000FF;
+  --brand-color-2: #3532FF;
+  --action-color-1: #36B37E;
+  --action-color-2: #FF5630;
+  --action-color-3: #FFAB00;
+  --grey-color-1: #212529;
+  --grey-color-2: #495057;
+  --grey-color-3: #495057;
+  --grey-color-4: #E9ECEF;
+  --grey-color-5: #F1F3F5;
+  --white-color: #FFF;
+  
+  /* FONT STYLES */
+  --font-size-title-1: 1.25rem;
+  --font-size-title-2: 1rem;
+  --font-size-text-1: 0.875rem;
+  --font-size-text-2: 0.75rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* OTHER STYLES */
+  --radius-1: 10px;
+  --radius-2: 5px;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--brand-color-1);
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--grey-color-4);
+}

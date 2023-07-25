@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+/* ==================== HEADER ==================== */
+.header {
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+  border-bottom: 1px solid var(--grey-color-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo {
+  object-fit: contain;
+  width: 48px;
+  cursor: pointer;
+}
+
+.header__buttons-container{
+  display: flex;
+  gap: 16px;
+}
+
+/* ==================== MAIN ==================== */
+
+.main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  margin: 24px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+
+  position: relative;
+}
+
+.main__info-user, .main__info-company {
+  width: 80%;
+}
+
+.main__info-user {
+  border: 1px solid var(--grey-color-4);
+  min-height: 10vh;
+  padding: 16px 24px;
+  line-height: 150%;
+}
+
+.main__info-company{
+  border: 1px solid var(--grey-color-4);
+  background-color: var(--grey-color-5);
+  min-height: 50vh;
+  line-height: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-company__name {
+  width: 100%;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-color-1);
+  color: var(--white-color);
+}
+
+.info-company__employees {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.employee-info {
+  border: 1px solid var(--brand-color-1);
+  width: 15.625rem;
+  height: 4.375rem;
+  padding: 12px;
+}
+
+.info-company__unemployed-info{
+  margin: auto 0;
+  text-align: center;
+}

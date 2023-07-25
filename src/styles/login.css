@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* ==================== HEADER ==================== */
+.header {
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+  border-bottom: 1px solid var(--grey-color-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo {
+  object-fit: contain;
+  width: 48px;
+  cursor: pointer;
+}
+
+.header__buttons-container{
+  display: flex;
+  gap: 16px;
+}
+
+/* ==================== MAIN ==================== */
+
+.main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('../assets/images/background-image-login-register.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form {
+  width: 30%;
+  height: auto;
+  padding: 24px;
+  background-color: var(--grey-color-5);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login__input {
+  outline: 1px solid transparent;
+  border: 1px solid var(--grey-color-4);
+  height: 36px;
+  padding: 12px;
+}
+
+.login__input:focus {
+  outline-color: var(--brand-color-1);
+}
+
+.login__form > span {
+  width: 100%;
+  text-align: center;
+  color: var(--grey-color-3);
+}
